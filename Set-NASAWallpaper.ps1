@@ -1,8 +1,8 @@
 ﻿$ProgressPreference = 'Continue'
-$APODURL = "https://apod.nasa.gov/apod"
 
 Function Get-NASAImage(){
 
+    $APODURL = "https://apod.nasa.gov/apod"
     $ProgressPreference = 'silentlyContinue'
     if (!(Test-Path "${env:USERPROFILE}\Pictures\apod")){
         mkdir "${env:USERPROFILE}\Pictures\apod"
